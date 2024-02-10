@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Space+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -14,22 +21,93 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
-          <img src="/asset/RENTHOMES.png" alt="" />
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </div>
-        <h1 class="text-green-800 text-3xl font-bold">leave green</h1>
-        <nav>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </nav>
-      </header>
+    <!-- Header begins here -->
+    <header>
+      <nav class="p-5 w-full md:flex md:items-center md:justify-between">
+        <!-- logo div and hamburger  -->
+        <div id="log-bug" class="flex justify-between item-center">
+          <!-- logo -->
+          <div class="inline-flex cursor-pointer">
+            <h1 class="text-2xl md:text-4xl text-green-900">
+              <span class="font-bold">RENT</span>HOMES
+            </h1>
+            <span class="text-gray-500">
+              <i class="fa fa-home" aria-hidden="true" class="w-10 h-80"></i
+            ></span>
+          </div>
 
-      <section id="hero"></section>
+          <!-- hamburger -->
+          <!-- <span class="w-10 text-green-900 border-2 border-red-600 cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)" class="text-green-900"></ion-icon>
+          </span> -->
+          <span
+            class="block text-2xl text-green-900 cursor-pointer mx-2 md:hidden"
+          >
+            <ion-icon name="menu"
+              onclick="Menu(this)" class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+
+        <!-- primary navBar items -->
+        <ul
+          class="items-center text-white md:text-green-900 bg-green-900 md:flex md:items-center z-[1] md:static w-full absolute md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:bg-opacity-0 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg p-2 rounded-2xl hover:border-2 hover:border-green-900 transition duration-100"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg p-2 rounded-2xl hover:border-2 hover:border-green-900 transition duration-300"
+              >About us</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg p-2 rounded-2xl hover:border-2 hover:border-green-900 transition duration-300"
+              >Services</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg p-2 rounded-2xl hover:border-2 hover:border-green-900 transition duration-300"
+              >Reviews</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-lg text-center p-2 rounded-2xl hover:border-2 hover:border-green-900 transition duration-100"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+<!--Main page begins here  -->
+    <main class="p-4">
+      <section id="hero">
+        <div id="right-div"></div>
+        <div id="right-image">
+
+        </div>
+      </section>
+
+      <footer>
+        <div id="socials">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-square-x-twitter"></i></span>
+            <span><i class="fa-brands fa-square-youtube"></i></span>
+        </div>
+      </footer>
     </main>
+    <script src="/dist/menu_burger.js"></script>
   </body>
 </html>
