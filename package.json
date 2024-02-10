@@ -1,0 +1,23 @@
+{
+  "name": "renthome",
+  "version": "1.0.0",
+  "description": "rentHouseSite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joker4mas/rentHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joker4mas/rentHouse/issues"
+  },
+  "homepage": "https://github.com/Joker4mas/rentHouse#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
