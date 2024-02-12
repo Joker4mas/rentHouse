@@ -7,6 +7,9 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Space+Mono:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400&family=Philosopher&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -90,24 +93,40 @@
         </ul>
       </nav>
     </header>
+
 <!--Main page begins here  -->
     <main class="p-4">
-      <section id="hero">
-        <div id="right-div"></div>
-        <div id="right-image">
+    <section id="hero" class="flex flex-col md:flex md:flex-row">
+        
+        <div id="right-div"  class="md:w-1/2 ">
+            <!-- heading for hero-section -->
+            <div id="hero-heading" >
+                <h1 class="w-3/4 my-6 font-philo text-6xl text-green-900">Your <br>
+            Renter Journey  Begins Here</h1>
+            <p class="my-4">We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
+            <div id="button" class="item-center md:items-start my-8">
+                <button class="w-24 p-2  bg-green-900 hover:bg-white hover:text-green-900 hover:border-2 hover:border-green-900 rounded-full text-center text-sm   text-white"><a href="http://" target="_blank" rel="noopener noreferrer">Rent Now</a></button>
+                <button class="w-32 p-2  bg-green-900 hover:bg-white hover:text-green-900 hover:border-2 hover:border-green-900 rounded-full text-center text-sm   text-white"><a href="http://" target="_blank" rel="noopener noreferrer">Rent Your Place</a></button>
+            </div>
 
+            </div>
         </div>
-      </section>
 
-      <footer>
+        <!-- right image -->
+        <div id="right-image" class=" block items-end md:w-1/2">
+            <img src="/asset/Fresh.png" alt="House image" class="h-96 text-end ml-16">
+        </div>
+    </section>
+
+    <footer>
         <div id="socials">
             <span><i class="fa-brands fa-facebook"></i></span>
             <span><i class="fa-brands fa-instagram"></i></span>
             <span><i class="fa-brands fa-square-x-twitter"></i></span>
             <span><i class="fa-brands fa-square-youtube"></i></span>
         </div>
-      </footer>
+    </footer>
     </main>
     <script src="/dist/menu_burger.js"></script>
-  </body>
+</body>
 </html>
